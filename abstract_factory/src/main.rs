@@ -90,20 +90,20 @@ impl FurnitureFactory for VictorianFurnitureFactory {
 
 fn main() {
     let modern_factory: Box<dyn FurnitureFactory> = Box::new(ModernFurnitureFactory);
-    let chair = modern_factory.create_chair();
-    let sofa = modern_factory.create_sofa();
-    let table = modern_factory.create_coffee_table();
+    let m_chair = modern_factory.create_chair();
+    let m_sofa = modern_factory.create_sofa();
+    let m_table = modern_factory.create_coffee_table();
     
-    chair.sit_on();
-    sofa.lie_on();
-    table.place_items();
+    m_chair.sit_on();
+    m_sofa.lie_on();
+    m_table.place_items();
 
     let victorian_factory: Box<dyn FurnitureFactory> = Box::new(VictorianFurnitureFactory);
-    let chair = victorian_factory.create_chair();
-    let sofa = victorian_factory.create_sofa();
-    let table = victorian_factory.create_coffee_table();
+    let v_chair = victorian_factory.create_chair();
+    let v_sofa = victorian_factory.create_sofa();
+    let v_table = victorian_factory.create_coffee_table();
     
-    chair.sit_on();
-    sofa.lie_on();
-    table.place_items();
+    v_chair.sit_on();
+    v_sofa.lie_on();
+    v_table.place_items();
 }
