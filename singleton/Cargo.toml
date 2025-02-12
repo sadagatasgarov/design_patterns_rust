@@ -1,0 +1,8 @@
+[package]
+name = "singleton"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static="*"
+once_cell="*"
